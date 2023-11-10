@@ -1,5 +1,3 @@
-package jobsheet6;
-
 import java.util.Scanner;
 
 public class Selection2Exp226{
