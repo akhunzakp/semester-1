@@ -21,3 +21,5 @@ public class ArrayNilai26 {
         sc.close();
     }
 }
+
+  
