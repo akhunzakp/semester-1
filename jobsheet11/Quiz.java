@@ -25,8 +25,9 @@ public class Quiz {
                         System.out.println("number > answer");
                 }
             }while(!success);
-            System.out.print("Apakah Anda ingin mengulang permainan (Y/y)");
+            System.out.print("Apakah anda ingin mengulang permainan (Y/y)?");
             menu=input.nextLine().charAt(0);
         }while(menu=='y'||menu=='Y');
+        System.out.println("Terima Kasih sudah bermain. Selamat Tinggal");
     }
 }
