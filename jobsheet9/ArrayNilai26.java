@@ -4,21 +4,34 @@ import java.util.Scanner;
 
 public class ArrayNilai26 {
     public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);    
-        int[] finalScore = new int[10];
+        Scanner input26 = new Scanner(System.in);
+        System.out.print("Masukkan jumlah Mahasiswa : ");
 
-        for (int i = 0; i < finalScore.length; i++) {
-            System.out.print("Input the final score-"+i+" : ");
-            finalScore[i] = sc.nextInt();
-        }
-        for (int i = 0; i < finalScore.length; i++) {
-            if (finalScore[i] > 70) {
-                System.out.println("Student-"+i+" pass!");
+        int jumlahMhs = input26.nextInt();
+        
+        int[] nilaiMhs = new int[jumlahMhs];
+        double totallulus = 0;
+        double totaltidaklulus = 0;
+        int jumlahLulus = 0;
+        int jumlahTidakLulus = 0;
+
+
+        for (int i = 0; i < nilaiMhs.length; i++) {
+            System.out.print("Masukkan nilai Mahasiswa ke- "+(i+1)+" : ");
+            nilaiMhs[i] = input26.nextInt();
+        
+            if (nilaiMhs[i] > 70) {
+                totallulus =+ nilaiMhs[i];
+                jumlahLulus++;
             }else 
-                System.out.println("Student-"+i+" didn't pass!");
+                totaltidaklulus += nilaiMhs[i];
+                jumlahTidakLulus++;
         }
-        sc.close();
+        double rata2lulus = totallulus/jumlahLulus;
+        double rata2tidaklulus = totaltidaklulus/jumlahTidakLulus;
+
+        System.out.println("Rata-rata nilai lulus = "+ rata2lulus);
+        System.out.println("Rata-rata nilai tidak lulus = "+ rata2tidaklulus);
     }
 }
 
