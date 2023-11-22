@@ -25,5 +25,5 @@ public class ForMultiples26 {
         System.out.printf("the average off all multiples of %d in the range 1 to 50 is %.2f.. \n" , multiple, average);
 
             }
-        }
+}
    
